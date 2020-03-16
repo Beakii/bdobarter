@@ -1,0 +1,17 @@
+.footer{
+    background-color: #212529;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bigger-icon{
+    font-size: 30px;
+}
+
+.footer-hover:hover{
+    color: rgb(226, 157, 30);
+}
