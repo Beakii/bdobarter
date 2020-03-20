@@ -31,29 +31,48 @@ const Calc = () => {
 
     return(
         <div className="nav-padding calc-wrapper">
+<           label className="instructions">
+                Enter your boats MAX weight - Sailors/Gear:
+                <br/>
+                e.g. 9500, 15000
+            </label> 
 
-            <label>Ship Max Weight</label>
-            <input type="number" onInput={(e) => setMaxWeight(e.target.value)}></input>
+            <br/>
+            <br/>
+
+            <div>
+                <label className="ship-weight">Ship Max Weight:</label>
+                <input type="number" onInput={(e) => setMaxWeight(e.target.value)}></input>
+            </div>
+
+            <br/>
+            <br/>
+
+            <label className="instructions">
+                Enter the amount of each item you have:
+                <br/>
+                e.g. 1 800LT item; 4 1000LT items;
+            </label> 
 
             <br/>
             <br/>
 
             <label>800LT Items</label>
             <input type="number" onInput={(e) => calc800Total(e.target.value)}></input>
-            <label htmlFor="number">{weight.lt800}</label>
+            <label htmlFor="number">Total: {weight.lt800}</label>
 
             <br/>
 
 
             <label>900LT Items</label>
             <input type="number" onInput={(e) => calc900Total(e.target.value)}></input>
-            <label htmlFor="number">{weight.lt900}</label>
+            <label htmlFor="number">Total: {weight.lt900}</label>
 
             <br/>
 
             <label>1000LT Items</label>
             <input type="number" onInput={(e) => calc1000Total(e.target.value)}></input>
-            <label htmlFor="number">{weight.lt1000}</label>
+            <label htmlFor="number">Total: {weight.lt1000}</label>
 
             <br/>
             <br/>

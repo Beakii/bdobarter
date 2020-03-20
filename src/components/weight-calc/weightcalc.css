@@ -1,3 +1,9 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .calc-wrapper{
     display: flex;
     align-items: center;
@@ -5,8 +11,35 @@
     flex-direction: column;
     max-height: calc(100vh - 156px);
     max-width: 100%;
+    padding: 2rem;
+    background-color: #252525;
+    border-radius: 10px;
+  }
+
+  .ship-weight{
+      margin-right: 1rem;
+  }
+
+  .instructions{
+      text-align: center;
+      padding: 1rem;
+      border: 2px solid;
   }
 
   .overweight{
       color: red;
+      border-bottom: solid 2px red;
+  }
+
+  .normal{
+      color: rgb(0, 184, 0);
+      border-bottom: solid 2px rgb(0, 184, 0);
+  }
+
+  input{
+      border-radius: 10px;
+      background-color: #353535;
+      border: solid 2px;
+      color: orange;
+      text-align: center;
   }
