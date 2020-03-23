@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1d51caba8f9a58237aec8e3816404823",
+    "revision": "2a440ad6d163557a9d5aa12720de4155",
     "url": "/bdobarter/index.html"
   },
   {
-    "revision": "798c42a694221c48dbff",
-    "url": "/bdobarter/static/css/main.11501d26.chunk.css"
+    "revision": "1f974e9482be3ff62f12",
+    "url": "/bdobarter/static/css/main.b47ed29d.chunk.css"
   },
   {
     "revision": "9cc9878d1e384139b8e0",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bdobarter/static/js/2.fe1838a7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "798c42a694221c48dbff",
-    "url": "/bdobarter/static/js/main.ddcbfae6.chunk.js"
+    "revision": "1f974e9482be3ff62f12",
+    "url": "/bdobarter/static/js/main.04f5402d.chunk.js"
   },
   {
     "revision": "4c73ea0daf56eda0e9e6",
