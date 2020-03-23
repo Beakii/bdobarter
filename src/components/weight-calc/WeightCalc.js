@@ -30,7 +30,7 @@ const Calc = () => {
     }
 
     return(
-        <div className="nav-padding calc-wrapper">
+        <div className="calc-wrapper">
 <           label className="instructions">
                 Enter your boats MAX weight - Sailors/Gear:
                 <br/>
@@ -38,14 +38,12 @@ const Calc = () => {
             </label> 
 
             <br/>
-            <br/>
 
-            <div>
+            <div className="input-row">
                 <label className="ship-weight">Ship Max Weight:</label>
                 <input type="number" onInput={(e) => setMaxWeight(e.target.value)}></input>
             </div>
 
-            <br/>
             <br/>
 
             <label className="instructions">
@@ -55,28 +53,33 @@ const Calc = () => {
             </label> 
 
             <br/>
-            <br/>
 
-            <label>800LT Items</label>
-            <input type="number" onInput={(e) => calc800Total(e.target.value)}></input>
-            <label htmlFor="number">Total: {weight.lt800}</label>
+            <section className="input-grid">
+                <div className="input-row">
+                    <label><span>0</span>800LT Items:</label>
+                    <input type="number" onInput={(e) => calc800Total(e.target.value)}></input>
+                    <label htmlFor="number">Total: {weight.lt800}</label>
+                </div>
 
-            <br/>
+                <br/>
 
+                <div className="input-row">
+                    <label><span>0</span>900LT Items:</label>
+                    <input type="number" onInput={(e) => calc900Total(e.target.value)}></input>
+                    <label htmlFor="number">Total: {weight.lt900}</label>
+                </div>
 
-            <label>900LT Items</label>
-            <input type="number" onInput={(e) => calc900Total(e.target.value)}></input>
-            <label htmlFor="number">Total: {weight.lt900}</label>
+                <br/>
 
-            <br/>
+                <div className="input-row">
+                    <label>1000LT Items:</label>
+                    <input type="number" onInput={(e) => calc1000Total(e.target.value)}></input>
+                    <label htmlFor="number">Total: {weight.lt1000}</label>
+                </div>
 
-            <label>1000LT Items</label>
-            <input type="number" onInput={(e) => calc1000Total(e.target.value)}></input>
-            <label htmlFor="number">Total: {weight.lt1000}</label>
-
-            <br/>
-            <br/>
-            <br/>
+                <br/>
+                <br/>
+            </section>
 
             <h3>Remaining Weight: <span className={weight.remaining <= 0 ? 'overweight' : 'normal'}>{weight.remaining}</span>LT</h3>
         </div>

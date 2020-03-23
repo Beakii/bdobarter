@@ -1,7 +1,9 @@
+/* POTENTIAL REMOVE HOVER PULLOUT, ADD FUNCTION TO ADD CLASS THAT PULLS IT OUT */
+
 .navbar{
     position: fixed;
     background-color: #212529;
-    transition: width 600ms ease;
+    transition: width 200ms ease;
     padding: 0;
     margin: 0;
 }

@@ -9,34 +9,34 @@ const MyNavbar = () =>{
                 <li className="logo">
                     <Link className="nav-link" to="/">
                         <span className="link-text">BDOBarter</span>
-                        <i class="fas fa-chevron-right"></i>
+                        <i className="fas fa-chevron-right"></i>
                     </Link>
                 </li>
 
                 <li className="nav-item">
                     <Link className="nav-link" to="/">
-                        <i class="fas fa-home"></i>
+                        <i className="fas fa-home"></i>
                         <span className="link-text">Home</span>
                     </Link>
                 </li>
 
                 <li className="nav-item">
                     <Link className="nav-link" to="/calculator">
-                        <i class="fas fa-weight-hanging"></i>
+                        <i className="fas fa-weight-hanging"></i>
                         <span className="link-text">Weight</span>
                     </Link>
                 </li>
 
                 <li className="nav-item">
                     <Link className="nav-link" to="/boat">
-                        <i class="fas fa-ship"></i>
+                        <i className="fas fa-ship"></i>
                         <span className="link-text">Upgrade</span>
                     </Link>
                 </li>
 
                 <li className="nav-item">
                     <Link className="nav-link" to="/calculator">
-                        <i class="fas fa-link"></i>
+                        <i className="fas fa-link"></i>
                         <span className="link-text">Links</span>
                     </Link>
                 </li>
